@@ -1,4 +1,6 @@
 import os
+import datetime
+
 class Logging:
   def __init__(self, level: str='LOG'):
     ''' Create Logging Level .
@@ -13,7 +15,8 @@ class Logging:
     '''
     env = os.getenv('env', '')
     if self.level == env or env == '':
-      text_log = '['+ self.level + '] ['+ file  +'] ['+ func + '] '+ string
+      timestamp =  str(datetime.datetime.now())
+      text_log = '['+ timestamp[:19] + '] ['+ self.level + '] ['+ file  +'] ['+ func + '] '+ string
       print(text_log)      
       if self.file_output != '':
         with open(self.file_output, 'a') as f:
