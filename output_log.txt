@@ -1,0 +1,3 @@
+[DEBUG] [---] [---] Testing log.
+[DEBUG] [file.py] [---] Testing log.
+[DEBUG] [file.py] [function1] Testing log.
