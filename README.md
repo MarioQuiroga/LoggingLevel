@@ -2,7 +2,7 @@
 Simple logging level developed for Sirena Data Analyst Assessment 
 
 ### Simple Usage Example
-'''
+```
 import os
 from LoggingLevel import LoggingLevel
 
@@ -23,4 +23,4 @@ log.log('Testing log.', 'file.py', 'function1')
 # Creating other logging
 other_log = LoggingLevel('DEBUG')
 other_log.log('Text from other_log')
-'''
+```
