@@ -2,7 +2,7 @@
 Simple logging level developed for Sirena Data Analyst Assessment 
 
 ### Simple Usage Example
-```
+```python
 import os
 from LoggingLevel import LoggingLevel
 
@@ -23,4 +23,18 @@ log.log('Testing log.', 'file.py', 'function1')
 # Creating other logging
 other_log = LoggingLevel('DEBUG')
 other_log.log('Text from other_log')
+```
+
+### Add new levels to logging
+The levels are defined in the LoggingLevel.levels variable they are ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']. To add new levels use:
+```python
+position_level = 1
+log = LoggingLevel('NEW_LEVEL')
+log.add_level('NEW_LEVEL', position_level)
+```
+
+### Setting current level
+```python
+log = LoggingLevel()
+log.set_level('DEBUG')
 ```
