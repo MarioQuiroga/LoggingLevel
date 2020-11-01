@@ -28,7 +28,7 @@ other_log.log('Text from other_log')
 ```
 
 ### Add new levels to logging
-The levels are defined in the LoggingLevel.levels variable they are ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']. To add new levels use:
+The levels are defined in the LoggingLevel.levels variable, they are ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']. To add new levels use:
 ```python
 position_level = 1
 log = LoggingLevel('NEW_LEVEL')
