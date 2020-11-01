@@ -19,6 +19,8 @@ log.set_output_file('output_log.txt')
 log.log('Testing log.')
 log.log('Testing log.', 'file.py')
 log.log('Testing log.', 'file.py', 'function1')
+var = 12345
+log.log('{}'.format(var))
 
 # Creating other logging
 other_log = LoggingLevel('DEBUG')
@@ -37,4 +39,12 @@ log.add_level('NEW_LEVEL', position_level)
 ```python
 log = LoggingLevel()
 log.set_level('DEBUG')
+```
+
+### Log variables
+```python
+var = 1234
+text = '{}'.format(var)
+log = LoggingLevel('WARNING')
+log.log(text)
 ```
