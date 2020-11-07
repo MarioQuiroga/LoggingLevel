@@ -18,9 +18,7 @@ class LoggingLevel:
     :func: Optional log function where the event occurs.
     '''
     # Check env var
-    env = 'WARNING'
-    if os.getenv('env', '')!='':
-      env = os.getenv('env', 'WARNING')
+    env = os.getenv('env', 'WARNING')
     
     # Perform log
     i_env = LoggingLevel.levels.index(env)
